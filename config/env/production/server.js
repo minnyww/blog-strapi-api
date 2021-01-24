@@ -1,3 +1,10 @@
-module.exports = ({ env }) => ({
-  url: env("HEROKU_URL"),
-});
+module.exports = {
+  settings: {
+    logger: {
+      level: "error",
+    },
+    public: {
+      path: "/data/public",
+    },
+  },
+};
